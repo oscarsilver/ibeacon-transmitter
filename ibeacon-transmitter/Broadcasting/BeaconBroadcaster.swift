@@ -11,13 +11,13 @@ import CoreBluetooth
 import CoreLocation
 
 protocol BroadcasterProtocol {
-    func startBeacon()
+    func startBeacon(withUUID uuidString: String)
     func stopBeacon()
 }
 
 class Broadcaster: NSObject {
-    
     fileprivate var shouldBroadcast: Bool = false
+    fileprivate var currentRegion: BeaconRegion? = nil
     fileprivate var peripheralManager: CBPeripheralManager!
     
     //MARK: Initialization
@@ -30,12 +30,16 @@ class Broadcaster: NSObject {
 
 //MARK: BeaconBroadcasterProtocol
 extension Broadcaster: BroadcasterProtocol {
-    func startBeacon() {
-        guard let region = BeaconRegion(uuidString: "df74a209-78e5-469e-bbe9-db806f76dd07") else { return }
-        startAdvertising(forRegion: region)
+    func startBeacon(withUUID uuidString: String) {
+        guard let region = BeaconRegion(uuidString: uuidString) else { return }
+        currentRegion = region
+        shouldBroadcast = true
+        startAdvertising(region: region)
     }
     
     func stopBeacon() {
+        currentRegion = nil
+        shouldBroadcast = false
         stopAdvertising()
     }
 }
@@ -43,17 +47,18 @@ extension Broadcaster: BroadcasterProtocol {
 //MARK: CBPeripheralManagerDelegate
 extension Broadcaster: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
-        if peripheral.state == .poweredOn && shouldBroadcast {
-            startBeacon()
+        if let region = currentRegion, peripheral.state == .poweredOn, shouldBroadcast {
+            startAdvertising(region: region)
         } else {
-            stopBeacon()
+            stopAdvertising()
         }
     }
 }
 
 //MARK: Private Methods
 private extension Broadcaster {
-    func startAdvertising(forRegion region: BeaconRegion) {
+    
+    func startAdvertising(region: BeaconRegion) {
         peripheralManager.startAdvertising(region.advertisementData)
     }
     
