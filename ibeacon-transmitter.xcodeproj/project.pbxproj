@@ -13,6 +13,7 @@
 		007ED47B1E6EADA100C4A1CC /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED47A1E6EADA100C4A1CC /* Label.swift */; };
 		007ED47D1E6EAE4F00C4A1CC /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED47C1E6EAE4F00C4A1CC /* Macros.swift */; };
 		007ED47F1E6EAF9A00C4A1CC /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED47E1E6EAF9A00C4A1CC /* Margin.swift */; };
+		007ED4821E6EB1FE00C4A1CC /* BeaconBroadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED4811E6EB1FE00C4A1CC /* BeaconBroadcaster.swift */; };
 		0095CC7E1E6EA33A00A1D22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0095CC7D1E6EA33A00A1D22F /* AppDelegate.swift */; };
 		0095CC851E6EA33A00A1D22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0095CC841E6EA33A00A1D22F /* Assets.xcassets */; };
 		0095CC881E6EA33A00A1D22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095CC861E6EA33A00A1D22F /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 		007ED47A1E6EADA100C4A1CC /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		007ED47C1E6EAE4F00C4A1CC /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		007ED47E1E6EAF9A00C4A1CC /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
+		007ED4811E6EB1FE00C4A1CC /* BeaconBroadcaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconBroadcaster.swift; sourceTree = "<group>"; };
 		0095CC7A1E6EA33A00A1D22F /* ibeacon-transmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ibeacon-transmitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0095CC7D1E6EA33A00A1D22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0095CC841E6EA33A00A1D22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		007ED4801E6EB1B100C4A1CC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				007ED4811E6EB1FE00C4A1CC /* BeaconBroadcaster.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		0095CC711E6EA33A00A1D22F = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		0095CC7C1E6EA33A00A1D22F /* ibeacon-transmitter */ = {
 			isa = PBXGroup;
 			children = (
+				007ED4801E6EB1B100C4A1CC /* Managers */,
 				007ED4781E6EAD7300C4A1CC /* Views */,
 				007ED4731E6EAC4500C4A1CC /* Enums */,
 				007ED46A1E6EAB5900C4A1CC /* SupportFiles */,
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007ED4821E6EB1FE00C4A1CC /* BeaconBroadcaster.swift in Sources */,
 				007ED4691E6EAA5100C4A1CC /* iBeaconTransmissionVC.swift in Sources */,
 				007ED47D1E6EAE4F00C4A1CC /* Macros.swift in Sources */,
 				007ED4761E6EACE400C4A1CC /* Strings.swift in Sources */,

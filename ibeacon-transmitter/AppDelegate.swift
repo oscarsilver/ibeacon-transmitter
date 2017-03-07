@@ -13,7 +13,7 @@ class AppDelegate: UIResponder {
     
     var window: UIWindow?
     
-    fileprivate lazy var startVC: UIViewController = iBeaconTransmissionVC()
+    fileprivate lazy var startVC: UIViewController = iBeaconTransmissionVC(beaconBroadcaster: BeaconBroadcaster())
 }
 
 //MARK: UIApplicationDelegate Methods

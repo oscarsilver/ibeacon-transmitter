@@ -11,6 +11,7 @@ import Cartography
 
 class iBeaconTransmissionVC: UIViewController {
 
+    fileprivate let beaconBroadcaster: BeaconBroadcasterProtocol
     fileprivate lazy var transmittingLabel: Label = Label(.idle)
     
     fileprivate lazy var transmissionSwitch: UISwitch = {
@@ -20,6 +21,17 @@ class iBeaconTransmissionVC: UIViewController {
         return transmissionSwitch
     }()
     
+    //MARK: Initialization
+    init(beaconBroadcaster: BeaconBroadcasterProtocol) {
+        self.beaconBroadcaster = beaconBroadcaster
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError(neededByCompiler)
+    }
+    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -49,6 +61,11 @@ private extension iBeaconTransmissionVC {
     }
     
     func toggleTransmission(shouldTransmit: Bool) {
+        if shouldTransmit {
+            beaconBroadcaster.startBroadcasting()
+        } else {
+            beaconBroadcaster.stopBroadcasting()
+        }
         transmittingLabel.text = shouldTransmit ? tr(.transmitting) : tr(.idle)
     }
 }
