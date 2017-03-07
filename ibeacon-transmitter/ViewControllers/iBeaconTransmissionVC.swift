@@ -12,7 +12,12 @@ import Cartography
 class iBeaconTransmissionVC: UIViewController {
 
     fileprivate var broadcaster: BroadcasterProtocol
-    fileprivate lazy var transmittingLabel: Label = Label(.idle)
+    fileprivate lazy var transmittingLabel: Label = {
+        let label = Label(tr(.idle))
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
+    }()
     
     fileprivate lazy var transmissionSwitch: UISwitch = {
         let transmissionSwitch = UISwitch()
@@ -81,6 +86,8 @@ private extension iBeaconTransmissionVC {
             
             transmissionSwitch.center == view.center
             transmittingLabel.centerX == view.centerX
+            transmittingLabel.left == view.left + .m20
+            transmittingLabel.right == view.right - .m20
             transmittingLabel.bottom == transmissionSwitch.top - .m20
         }
     }
