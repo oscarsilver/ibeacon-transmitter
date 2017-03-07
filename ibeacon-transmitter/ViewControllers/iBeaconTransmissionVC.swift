@@ -11,6 +11,11 @@ import Cartography
 
 class iBeaconTransmissionVC: UIViewController {
 
+    fileprivate lazy var transmittingLabel: Label = {
+        let label = Label(.idle)
+        return label
+    }()
+    
     fileprivate lazy var transmissionSwitch: UISwitch = {
         let transmissionSwitch = UISwitch()
         transmissionSwitch.isOn = false
@@ -35,16 +40,19 @@ extension iBeaconTransmissionVC {
 private extension iBeaconTransmissionVC {
     func setupViews() {
         view.addSubview(transmissionSwitch)
+        view.addSubview(transmittingLabel)
         
-        constrain(view, transmissionSwitch) {
-            view, transmissionSwitch in
+        constrain(view, transmissionSwitch, transmittingLabel) {
+            view, transmissionSwitch, transmittingLabel in
             
             transmissionSwitch.center == view.center
+            transmittingLabel.centerX == view.centerX
+            transmittingLabel.bottom == transmissionSwitch.top - 20
         }
     }
     
     func toggleTransmission(shouldTransmit: Bool) {
-        
+        transmittingLabel.text = shouldTransmit ? tr(.transmitting) : tr(.idle)
     }
 }
 
