@@ -38,12 +38,8 @@ extension BeaconBroadcaster: BeaconBroadcasterProtocol {
             isAdvertising = false
         }
         
-        let uuid = UUID(uuidString: "df74a209-78e5-469e-bbe9-db806f76dd07")!
-        let region = CLBeaconRegion(proximityUUID: uuid, identifier: "lolboll")
-        let peripheralData = region.peripheralData(withMeasuredPower: 127)
-        
-        let advertisementData = peripheralData.dictionaryWithValues(forKeys: peripheralData.allKeys as! [String])
-        peripheralManager.startAdvertising(advertisementData)
+        guard let region = BeaconRegion(uuidString: "df74a209-78e5-469e-bbe9-db806f76dd07") else { return }
+        peripheralManager.startAdvertising(region.advertisementData)
     }
     
     func stopBroadcasting() {
@@ -55,20 +51,9 @@ extension BeaconBroadcaster: BeaconBroadcasterProtocol {
 extension BeaconBroadcaster: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         if peripheral.state == .poweredOn && shouldBroadcast {
-            startBeacon()
+            startBroadcasting()
         } else {
-            stopBeacon()
+            stopBroadcasting()
         }
-    }
-}
-
-//MARK: Private Methods
-private extension BeaconBroadcaster {
-    func startBeacon() {
-        
-    }
-    
-    func stopBeacon() {
-        
     }
 }
