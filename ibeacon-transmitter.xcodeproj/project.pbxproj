@@ -438,7 +438,6 @@
 			baseConfigurationReference = 9EF3DDDF45CA860014D8FA42 /* Pods-ibeacon-transmitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DL7K9B66J3;
 				INFOPLIST_FILE = "ibeacon-transmitter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,7 +453,6 @@
 			baseConfigurationReference = 07C5488FCF38225CBF5A9C95 /* Pods-ibeacon-transmitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DL7K9B66J3;
 				INFOPLIST_FILE = "ibeacon-transmitter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
