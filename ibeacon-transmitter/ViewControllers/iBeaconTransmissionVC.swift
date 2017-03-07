@@ -62,11 +62,20 @@ private extension iBeaconTransmissionVC {
     
     func toggleTransmission(shouldTransmit: Bool) {
         if shouldTransmit {
-            broadcaster.startBeacon(withUUID: "6C5DF2C4-7256-4563-BA20-A2507EFED9BB")
+            startTransmission()
         } else {
-            broadcaster.stopBeacon()
+            stopTransmission()
         }
-        transmittingLabel.text = shouldTransmit ? tr(.transmitting) : tr(.idle)
+    }
+    
+    func startTransmission() {
+        broadcaster.startBeacon(withUUID: "6C5DF2C4-7256-4563-BA20-A2507EFED9BB")
+        transmittingLabel.text = tr(.transmitting)
+    }
+    
+    func stopTransmission() {
+        broadcaster.stopBeacon()
+        transmittingLabel.text = tr(.idle)
     }
 }
 
