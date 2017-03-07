@@ -7,5 +7,5 @@ target 'ibeacon-transmitter' do
 
   # Pods for ibeacon-transmitter
   pod 'Cartography', '~> 1.0.1'
-
+  pod 'SwiftGen'
 end

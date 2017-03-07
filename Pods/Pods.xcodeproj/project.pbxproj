@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9967B43FC984467CE65671A518AB59AB /* View.swift */; };
-		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F430318810F981930595CBFAA3800CB /* Align.swift */; };
-		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6E4CF523C6C377E60834CD9A194C90 /* LayoutProxy.swift */; };
-		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACEDB161A4797D6EEFC4F790099345 /* Priority.swift */; };
+		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB18EE788D903DD529409EB9BD1BEF /* View.swift */; };
+		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA71273CDA20146FBC105174D33E94D /* Align.swift */; };
+		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA2EA703E24B27B987FFE72F0F9F079 /* LayoutProxy.swift */; };
+		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B4D8CE27A729AA9CF59C8D3A7E4F6 /* Priority.swift */; };
 		24EF682ACFF8F1CEA8BDDAA340220AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9592FA99854F4CE27000C2DC8FF3CF3 /* Constrain.swift */; };
-		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6E3F1FB9EC741DDE89F903AE74E60 /* LayoutSupport.swift */; };
-		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E525E9A54CDD0B28A196C7621F590 /* ConstraintGroup.swift */; };
-		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BF9D30A7D79EA0B749B084D52331BC /* Compound.swift */; };
+		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636731212C7180092D126A204C5F07A /* Constrain.swift */; };
+		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0CC88F5B9D4D78C6AC49D8546D913 /* LayoutSupport.swift */; };
+		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDDA8F99E4AF754A3EB9564CAC7346 /* ConstraintGroup.swift */; };
+		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C85BA5B83820D01540BE134FA40837 /* Compound.swift */; };
 		65CB05C2D1B3F2DCA35DD6525B2D4730 /* Pods-ibeacon-transmitter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7380C4A653290E16CA797D7D9D2E6A /* Pods-ibeacon-transmitter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9831F22C8E22002F58271FB9E67DFD0 /* Expression.swift */; };
-		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F91DA0120F16DF151739A06D03ED8B /* Size.swift */; };
-		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB8A3D61D9F977FA15E2F3C78CB79B /* Distribute.swift */; };
+		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21FF164A4AE1B50E9CB5DE4605DBE0E /* Expression.swift */; };
+		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EFC77E6AF64D003601E4CC7FCE295 /* Size.swift */; };
+		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C45770B42A96A34BBD27EB2135332B4 /* Distribute.swift */; };
 		87E488C8217F34BDDFA1071ACD303D47 /* Pods-ibeacon-transmitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E04576D0AE3C83D672DFE7572E34330C /* Pods-ibeacon-transmitter-dummy.m */; };
-		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E50FB36FB9D722735A574243EF6FE1 /* Point.swift */; };
-		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E558DCCD834906B5CBB7899487C0CF /* ViewUtils.swift */; };
-		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A04C706F45EC3E6A8E98A55EE95A1 /* Context.swift */; };
-		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D365FAC962F7716E8BE2862F60AAE09 /* Edges.swift */; };
-		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12A8BE5E12427836BC20731B59CC4C /* Extensions.swift */; };
-		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDCF78CBF68D57A888B39C1FDC4B63F /* Property.swift */; };
-		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE97589138731C11804510B0115DAA4 /* Cartography-dummy.m */; };
+		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661BFAEECC016F1CEF35D8C917201B1F /* Point.swift */; };
+		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435079A062B125B8AF2F2150276CAD58 /* ViewUtils.swift */; };
+		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F308FEBC1ADAB43609153C3172CDA1D6 /* Context.swift */; };
+		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5E4D1596F4F165B7A814F51126AFF /* Edges.swift */; };
+		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CDB59EC416744CD169629F54917B9D /* Extensions.swift */; };
+		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88327CA4EB2708A932495F98D5691F26 /* Property.swift */; };
+		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354717B8E29FC27C90679E75274A0769 /* Cartography-dummy.m */; };
 		BE28CC4D554083E0F15BED84A64B9F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722F287D12FECC556BB6057BB76E87CF /* Constraint.swift */; };
-		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EC4C757DBCE8EC019BF49AEFE4564 /* Edge.swift */; };
-		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606E96564743DB0DF8FCED36FD4B7A7 /* Dimension.swift */; };
-		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099B41F154B627B59912C0C6C9B32AFE /* Coefficients.swift */; };
-		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8342D1F76402CC736E7F3B64D5B0AF7A /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC4E40442F5F7C0C9D1D1F8B7DE9DA /* Constraint.swift */; };
+		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9A45BA78D2E057A84153B6CE20A2D /* Edge.swift */; };
+		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61661238214D34ABBA817DB6BCEA712 /* Dimension.swift */; };
+		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F277CD045100226A80B7FB9B4BCE /* Coefficients.swift */; };
+		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB0F55C4BCD106098379C174F31BF88 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,46 +47,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DC4E40442F5F7C0C9D1D1F8B7DE9DA /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
 		04A6D7447ACB9DCAC00FD40F471A3A25 /* Pods-ibeacon-transmitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ibeacon-transmitter.debug.xcconfig"; sourceTree = "<group>"; };
 		06C2B4C43DC338319C26E48849E86718 /* Pods-ibeacon-transmitter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ibeacon-transmitter-acknowledgements.plist"; sourceTree = "<group>"; };
-		099B41F154B627B59912C0C6C9B32AFE /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
 		0B7380C4A653290E16CA797D7D9D2E6A /* Pods-ibeacon-transmitter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ibeacon-transmitter-umbrella.h"; sourceTree = "<group>"; };
-		0CE97589138731C11804510B0115DAA4 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
-		0DDCF78CBF68D57A888B39C1FDC4B63F /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		111356CA007332EC44DFA7DC811C29E8 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
 		19AAA05641A3B14CB8CB663C98D8276F /* Pods_ibeacon_transmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ibeacon_transmitter.framework; path = "Pods-ibeacon-transmitter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		202A04C706F45EC3E6A8E98A55EE95A1 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
-		23AB8A3D61D9F977FA15E2F3C78CB79B /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
-		2D365FAC962F7716E8BE2862F60AAE09 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
-		32E558DCCD834906B5CBB7899487C0CF /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		19C3B4EB5B4459BF300F5D142B0271EE /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		1BDB18EE788D903DD529409EB9BD1BEF /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		1EB0F55C4BCD106098379C174F31BF88 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
 		34F6DB1C236D9A588DFE6D826A550446 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		354717B8E29FC27C90679E75274A0769 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
 		3754A6E26CEE57C2E87001A08F9F79D0 /* Pods-ibeacon-transmitter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ibeacon-transmitter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		38E50FB36FB9D722735A574243EF6FE1 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
-		39B905D6F8A6F41DE7C3570416E6FC31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EE5E120A9BE5FB2AA2E72FB59EDF4D /* Pods-ibeacon-transmitter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ibeacon-transmitter-resources.sh"; sourceTree = "<group>"; };
-		3F430318810F981930595CBFAA3800CB /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
-		42BF9D30A7D79EA0B749B084D52331BC /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
-		59FD051E7B7FEE3DD7C60815B63C33BE /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
-		6B6E4CF523C6C377E60834CD9A194C90 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		435079A062B125B8AF2F2150276CAD58 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		4FA71273CDA20146FBC105174D33E94D /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		5C1EFC77E6AF64D003601E4CC7FCE295 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		661BFAEECC016F1CEF35D8C917201B1F /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		67C9A45BA78D2E057A84153B6CE20A2D /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		6C45770B42A96A34BBD27EB2135332B4 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
 		6F5CB016602F0106DEBC4FF8AF6C70DE /* Pods-ibeacon-transmitter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ibeacon-transmitter-frameworks.sh"; sourceTree = "<group>"; };
-		722F287D12FECC556BB6057BB76E87CF /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		8342D1F76402CC736E7F3B64D5B0AF7A /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
-		87F91DA0120F16DF151739A06D03ED8B /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
-		8A12A8BE5E12427836BC20731B59CC4C /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
-		8A45AB4BA868E6A22C89EC1ECD941016 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
+		74C85BA5B83820D01540BE134FA40837 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		84BDDA8F99E4AF754A3EB9564CAC7346 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		88327CA4EB2708A932495F98D5691F26 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		8BA2EA703E24B27B987FFE72F0F9F079 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9967B43FC984467CE65671A518AB59AB /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
 		996F7F4A1A8CD2430327C46E754E0928 /* Pods-ibeacon-transmitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ibeacon-transmitter.release.xcconfig"; sourceTree = "<group>"; };
-		9EF6E3F1FB9EC741DDE89F903AE74E60 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		9EC5E4D1596F4F165B7A814F51126AFF /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
 		9F441251523E520666F1283570ADA24B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0ACEDB161A4797D6EEFC4F790099345 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
-		C9592FA99854F4CE27000C2DC8FF3CF3 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		B1CCCC05463B116183EDC90B237553DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61661238214D34ABBA817DB6BCEA712 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		C6D0F277CD045100226A80B7FB9B4BCE /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D606E96564743DB0DF8FCED36FD4B7A7 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
-		D83E525E9A54CDD0B28A196C7621F590 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
-		D9831F22C8E22002F58271FB9E67DFD0 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
-		DE9EC4C757DBCE8EC019BF49AEFE4564 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		D21FF164A4AE1B50E9CB5DE4605DBE0E /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		D3CDB59EC416744CD169629F54917B9D /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		D69B4D8CE27A729AA9CF59C8D3A7E4F6 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
 		E04576D0AE3C83D672DFE7572E34330C /* Pods-ibeacon-transmitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ibeacon-transmitter-dummy.m"; sourceTree = "<group>"; };
-		EDBD5D708D30E3F57E8C9ECFD4F6BC60 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		EFF0CC88F5B9D4D78C6AC49D8546D913 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		F308FEBC1ADAB43609153C3172CDA1D6 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		F4D3D3069F0F303587C5167C796BB281 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		F636731212C7180092D126A204C5F07A /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
 		F6DDB3BF0DAF93BF2691A92AA76EEBF1 /* Pods-ibeacon-transmitter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ibeacon-transmitter.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,15 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2ABEAD923320382240F89398A802503C /* Support Files */ = {
+		39C66E309383E95C600EF158EEB76974 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A45AB4BA868E6A22C89EC1ECD941016 /* Cartography.modulemap */,
-				EDBD5D708D30E3F57E8C9ECFD4F6BC60 /* Cartography.xcconfig */,
-				0CE97589138731C11804510B0115DAA4 /* Cartography-dummy.m */,
-				59FD051E7B7FEE3DD7C60815B63C33BE /* Cartography-prefix.pch */,
-				8342D1F76402CC736E7F3B64D5B0AF7A /* Cartography-umbrella.h */,
-				39B905D6F8A6F41DE7C3570416E6FC31 /* Info.plist */,
+				111356CA007332EC44DFA7DC811C29E8 /* Cartography.modulemap */,
+				F4D3D3069F0F303587C5167C796BB281 /* Cartography.xcconfig */,
+				354717B8E29FC27C90679E75274A0769 /* Cartography-dummy.m */,
+				19C3B4EB5B4459BF300F5D142B0271EE /* Cartography-prefix.pch */,
+				1EB0F55C4BCD106098379C174F31BF88 /* Cartography-umbrella.h */,
+				B1CCCC05463B116183EDC90B237553DA /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Cartography";
@@ -133,31 +133,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42CA6C4D753646FF575CDF8DA9E99BB9 /* Cartography */ = {
+		41A6459ED373C8D75656A7465F7458EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F430318810F981930595CBFAA3800CB /* Align.swift */,
-				099B41F154B627B59912C0C6C9B32AFE /* Coefficients.swift */,
-				42BF9D30A7D79EA0B749B084D52331BC /* Compound.swift */,
-				C9592FA99854F4CE27000C2DC8FF3CF3 /* Constrain.swift */,
-				722F287D12FECC556BB6057BB76E87CF /* Constraint.swift */,
-				D83E525E9A54CDD0B28A196C7621F590 /* ConstraintGroup.swift */,
-				202A04C706F45EC3E6A8E98A55EE95A1 /* Context.swift */,
-				D606E96564743DB0DF8FCED36FD4B7A7 /* Dimension.swift */,
-				23AB8A3D61D9F977FA15E2F3C78CB79B /* Distribute.swift */,
-				DE9EC4C757DBCE8EC019BF49AEFE4564 /* Edge.swift */,
-				2D365FAC962F7716E8BE2862F60AAE09 /* Edges.swift */,
-				D9831F22C8E22002F58271FB9E67DFD0 /* Expression.swift */,
-				8A12A8BE5E12427836BC20731B59CC4C /* Extensions.swift */,
-				6B6E4CF523C6C377E60834CD9A194C90 /* LayoutProxy.swift */,
-				9EF6E3F1FB9EC741DDE89F903AE74E60 /* LayoutSupport.swift */,
-				38E50FB36FB9D722735A574243EF6FE1 /* Point.swift */,
-				C0ACEDB161A4797D6EEFC4F790099345 /* Priority.swift */,
-				0DDCF78CBF68D57A888B39C1FDC4B63F /* Property.swift */,
-				87F91DA0120F16DF151739A06D03ED8B /* Size.swift */,
-				9967B43FC984467CE65671A518AB59AB /* View.swift */,
-				32E558DCCD834906B5CBB7899487C0CF /* ViewUtils.swift */,
-				2ABEAD923320382240F89398A802503C /* Support Files */,
+				6A5B208BE0D3CDD3CCC0C76CC662EB90 /* Cartography */,
+				77675170E694A5DF8CB27930B71F5540 /* SwiftGen */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A5B208BE0D3CDD3CCC0C76CC662EB90 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				4FA71273CDA20146FBC105174D33E94D /* Align.swift */,
+				C6D0F277CD045100226A80B7FB9B4BCE /* Coefficients.swift */,
+				74C85BA5B83820D01540BE134FA40837 /* Compound.swift */,
+				F636731212C7180092D126A204C5F07A /* Constrain.swift */,
+				01DC4E40442F5F7C0C9D1D1F8B7DE9DA /* Constraint.swift */,
+				84BDDA8F99E4AF754A3EB9564CAC7346 /* ConstraintGroup.swift */,
+				F308FEBC1ADAB43609153C3172CDA1D6 /* Context.swift */,
+				C61661238214D34ABBA817DB6BCEA712 /* Dimension.swift */,
+				6C45770B42A96A34BBD27EB2135332B4 /* Distribute.swift */,
+				67C9A45BA78D2E057A84153B6CE20A2D /* Edge.swift */,
+				9EC5E4D1596F4F165B7A814F51126AFF /* Edges.swift */,
+				D21FF164A4AE1B50E9CB5DE4605DBE0E /* Expression.swift */,
+				D3CDB59EC416744CD169629F54917B9D /* Extensions.swift */,
+				8BA2EA703E24B27B987FFE72F0F9F079 /* LayoutProxy.swift */,
+				EFF0CC88F5B9D4D78C6AC49D8546D913 /* LayoutSupport.swift */,
+				661BFAEECC016F1CEF35D8C917201B1F /* Point.swift */,
+				D69B4D8CE27A729AA9CF59C8D3A7E4F6 /* Priority.swift */,
+				88327CA4EB2708A932495F98D5691F26 /* Property.swift */,
+				5C1EFC77E6AF64D003601E4CC7FCE295 /* Size.swift */,
+				1BDB18EE788D903DD529409EB9BD1BEF /* View.swift */,
+				435079A062B125B8AF2F2150276CAD58 /* ViewUtils.swift */,
+				39C66E309383E95C600EF158EEB76974 /* Support Files */,
 			);
 			name = Cartography;
 			path = Cartography;
@@ -171,12 +180,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		77675170E694A5DF8CB27930B71F5540 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftGen;
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C3A8124013EB3EC5D0EE8AAC411E5B26 /* Pods */,
+				41A6459ED373C8D75656A7465F7458EB /* Pods */,
 				3ECB88D23AC6D66496C46F3D09CC21AE /* Products */,
 				7F02ECD969CFB620CFB978141653AE6B /* Targets Support Files */,
 			);
@@ -196,14 +213,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C3A8124013EB3EC5D0EE8AAC411E5B26 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				42CA6C4D753646FF575CDF8DA9E99BB9 /* Cartography */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C77618163380D4877BB2E5767ED45E9C /* Pods-ibeacon-transmitter */ = {
@@ -396,7 +405,7 @@
 		};
 		48231957691E46B4697342E285631D61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDBD5D708D30E3F57E8C9ECFD4F6BC60 /* Cartography.xcconfig */;
+			baseConfigurationReference = F4D3D3069F0F303587C5167C796BB281 /* Cartography.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -463,7 +472,7 @@
 		};
 		BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDBD5D708D30E3F57E8C9ECFD4F6BC60 /* Cartography.xcconfig */;
+			baseConfigurationReference = F4D3D3069F0F303587C5167C796BB281 /* Cartography.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -1,12 +1,15 @@
 PODS:
   - Cartography (1.0.1)
+  - SwiftGen (4.2.0)
 
 DEPENDENCIES:
   - Cartography (~> 1.0.1)
+  - SwiftGen
 
 SPEC CHECKSUMS:
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  SwiftGen: b6bfed151243348e4603b91bf5bc4eb2486c9d5b
 
-PODFILE CHECKSUM: 98d2f0abb3244b8bb07971bd1e2b3c880550ad6b
+PODFILE CHECKSUM: 46947b76175b604e84a424675eb3846c724d9902
 
 COCOAPODS: 1.2.0
