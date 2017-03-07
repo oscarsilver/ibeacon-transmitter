@@ -11,7 +11,7 @@ import Cartography
 
 class iBeaconTransmissionVC: UIViewController {
 
-    fileprivate let broadcaster: BroadcasterProtocol
+    fileprivate var broadcaster: BroadcasterProtocol
     fileprivate lazy var transmittingLabel: Label = Label(.idle)
     
     fileprivate lazy var transmissionSwitch: UISwitch = {
@@ -35,6 +35,7 @@ class iBeaconTransmissionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        broadcaster.delegate = self
     }
 }
 
@@ -42,6 +43,30 @@ class iBeaconTransmissionVC: UIViewController {
 extension iBeaconTransmissionVC {
     func transmissionSwitchToggled(_ transmissionSwitch: UISwitch) {
         toggleTransmission(shouldTransmit: transmissionSwitch.isOn)
+    }
+}
+
+//MARK: BroadcasterDelegate
+extension iBeaconTransmissionVC: BroadcasterDelegate {
+    func transmissionStarted() {
+        DispatchQueue.main.async {
+            self.transmittingLabel.text = tr(.transmitting)
+            self.transmissionSwitch.isOn = true
+        }
+    }
+    
+    func transmissionStopped() {
+        DispatchQueue.main.async {
+            self.transmittingLabel.text = tr(.idle)
+            self.transmissionSwitch.isOn = false
+        }
+    }
+    
+    func transmissionFailed() {
+        DispatchQueue.main.async {
+            self.transmittingLabel.text = tr(.transmissionFailed)
+            self.transmissionSwitch.isOn = false
+        }
     }
 }
 
@@ -70,12 +95,10 @@ private extension iBeaconTransmissionVC {
     
     func startTransmission() {
         broadcaster.startBeacon(withUUID: "6C5DF2C4-7256-4563-BA20-A2507EFED9BB")
-        transmittingLabel.text = tr(.transmitting)
     }
     
     func stopTransmission() {
         broadcaster.stopBeacon()
-        transmittingLabel.text = tr(.idle)
     }
 }
 

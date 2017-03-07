@@ -9,6 +9,8 @@ import Foundation
 enum L10n {
   /// Idle
   case idle
+  /// Failed to start transmission, please check that bluetooth is enabled
+  case transmissionFailed
   /// Transmitting
   case transmitting
 }
@@ -21,6 +23,8 @@ extension L10n: CustomStringConvertible {
     switch self {
       case .idle:
         return L10n.tr(key: "idle")
+      case .transmissionFailed:
+        return L10n.tr(key: "transmissionFailed")
       case .transmitting:
         return L10n.tr(key: "transmitting")
     }

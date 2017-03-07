@@ -8,3 +8,4 @@
 
 "transmitting" = "Transmitting";
 "idle" = "Idle";
+"transmissionFailed" = "Failed to start transmission, please check that bluetooth is enabled";

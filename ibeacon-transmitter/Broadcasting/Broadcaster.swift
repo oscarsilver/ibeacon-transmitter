@@ -1,5 +1,5 @@
 //
-//  BeaconBroadcaster.swift
+//  Broadcaster.swift
 //  ibeacon-transmitter
 //
 //  Created by Oscar Silver on 2017-03-07.
@@ -13,12 +13,22 @@ import CoreLocation
 protocol BroadcasterProtocol {
     func startBeacon(withUUID uuidString: String)
     func stopBeacon()
+    
+    var delegate: BroadcasterDelegate? { get set }
+}
+
+protocol BroadcasterDelegate {
+    func transmissionStopped()
+    func transmissionStarted()
+    func transmissionFailed()
 }
 
 class Broadcaster: NSObject {
     fileprivate var shouldBroadcast: Bool = false
     fileprivate var currentRegion: BeaconRegion? = nil
     fileprivate var peripheralManager: CBPeripheralManager!
+    
+    var delegate: BroadcasterDelegate?
     
     //MARK: Initialization
     override init() {
@@ -34,7 +44,12 @@ extension Broadcaster: BroadcasterProtocol {
         guard let region = BeaconRegion(uuidString: uuidString) else { return }
         currentRegion = region
         shouldBroadcast = true
-        startAdvertising(region: region)
+        
+        if peripheralManager.state == .poweredOn {
+            startAdvertising(region: region)
+        } else {
+            delegate?.transmissionFailed()
+        }
     }
     
     func stopBeacon() {
@@ -60,9 +75,11 @@ private extension Broadcaster {
     
     func startAdvertising(region: BeaconRegion) {
         peripheralManager.startAdvertising(region.advertisementData)
+        delegate?.transmissionStarted()
     }
     
     func stopAdvertising() {
         peripheralManager.stopAdvertising()
+        delegate?.transmissionStopped()
     }
 }
