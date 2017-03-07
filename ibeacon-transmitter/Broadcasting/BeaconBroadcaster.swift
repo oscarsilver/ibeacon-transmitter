@@ -57,3 +57,8 @@ extension BeaconBroadcaster: CBPeripheralManagerDelegate {
         }
     }
 }
+
+//MARK: Private Methods
+private extension BeaconBroadcaster {
+    
+}
