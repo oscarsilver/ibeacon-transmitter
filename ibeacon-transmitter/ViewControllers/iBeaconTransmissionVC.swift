@@ -11,10 +11,7 @@ import Cartography
 
 class iBeaconTransmissionVC: UIViewController {
 
-    fileprivate lazy var transmittingLabel: Label = {
-        let label = Label(.idle)
-        return label
-    }()
+    fileprivate lazy var transmittingLabel: Label = Label(.idle)
     
     fileprivate lazy var transmissionSwitch: UISwitch = {
         let transmissionSwitch = UISwitch()
