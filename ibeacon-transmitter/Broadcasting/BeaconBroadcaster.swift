@@ -31,18 +31,12 @@ class Broadcaster: NSObject {
 //MARK: BeaconBroadcasterProtocol
 extension Broadcaster: BroadcasterProtocol {
     func startBeacon() {
-        let isAdvertising = peripheralManager.isAdvertising
-        
-        if isAdvertising {
-            stopAdvertising()
-        }
-        
         guard let region = BeaconRegion(uuidString: "df74a209-78e5-469e-bbe9-db806f76dd07") else { return }
         startAdvertising(forRegion: region)
     }
     
     func stopBeacon() {
-        peripheralManager.stopAdvertising()
+        stopAdvertising()
     }
 }
 
