@@ -10,12 +10,12 @@ import Foundation
 import CoreBluetooth
 import CoreLocation
 
-protocol BeaconBroadcasterProtocol {
-    func startBroadcasting()
-    func stopBroadcasting()
+protocol BroadcasterProtocol {
+    func startBeacon()
+    func stopBeacon()
 }
 
-class BeaconBroadcaster: NSObject {
+class Broadcaster: NSObject {
     
     fileprivate var shouldBroadcast: Bool = false
     fileprivate var peripheralManager: CBPeripheralManager!
@@ -29,36 +29,41 @@ class BeaconBroadcaster: NSObject {
 }
 
 //MARK: BeaconBroadcasterProtocol
-extension BeaconBroadcaster: BeaconBroadcasterProtocol {
-    func startBroadcasting() {
-        var isAdvertising = peripheralManager.isAdvertising
+extension Broadcaster: BroadcasterProtocol {
+    func startBeacon() {
+        let isAdvertising = peripheralManager.isAdvertising
         
         if isAdvertising {
-            peripheralManager.stopAdvertising()
-            isAdvertising = false
+            stopAdvertising()
         }
         
         guard let region = BeaconRegion(uuidString: "df74a209-78e5-469e-bbe9-db806f76dd07") else { return }
-        peripheralManager.startAdvertising(region.advertisementData)
+        startAdvertising(forRegion: region)
     }
     
-    func stopBroadcasting() {
+    func stopBeacon() {
         peripheralManager.stopAdvertising()
     }
 }
 
 //MARK: CBPeripheralManagerDelegate
-extension BeaconBroadcaster: CBPeripheralManagerDelegate {
+extension Broadcaster: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         if peripheral.state == .poweredOn && shouldBroadcast {
-            startBroadcasting()
+            startBeacon()
         } else {
-            stopBroadcasting()
+            stopBeacon()
         }
     }
 }
 
 //MARK: Private Methods
-private extension BeaconBroadcaster {
+private extension Broadcaster {
+    func startAdvertising(forRegion region: BeaconRegion) {
+        peripheralManager.startAdvertising(region.advertisementData)
+    }
     
+    func stopAdvertising() {
+        peripheralManager.stopAdvertising()
+    }
 }
