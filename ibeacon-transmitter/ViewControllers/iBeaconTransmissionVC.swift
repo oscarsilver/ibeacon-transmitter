@@ -47,7 +47,7 @@ private extension iBeaconTransmissionVC {
             
             transmissionSwitch.center == view.center
             transmittingLabel.centerX == view.centerX
-            transmittingLabel.bottom == transmissionSwitch.top - 20
+            transmittingLabel.bottom == transmissionSwitch.top - .m20
         }
     }
     
