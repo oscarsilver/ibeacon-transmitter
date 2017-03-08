@@ -13,29 +13,19 @@ import CoreLocation
 protocol BroadcasterProtocol {
     func startBeacon(withUUID uuidString: String, localName: String)
     func stopBeacon()
-    
-    var delegate: BroadcasterDelegate? { get set }
+    weak var delegate: BroadcasterDelegate? { get set }
 }
 
-protocol BroadcasterDelegate {
+protocol BroadcasterDelegate: class {
     func transmissionStopped()
     func transmissionStarted()
     func transmissionFailed()
 }
 
 class Broadcaster: NSObject {
-    fileprivate var shouldBroadcast: Bool = false
     fileprivate var currentRegion: BeaconRegion? = nil
-    fileprivate var peripheralManager: CBPeripheralManager!
-    
-    var delegate: BroadcasterDelegate?
-    
-    //MARK: Initialization
-    override init() {
-        super.init()
-        peripheralManager = CBPeripheralManager(delegate: self, queue: DispatchQueue.global())
-        assert(peripheralManager != nil)
-    }
+    fileprivate lazy var peripheralManager: CBPeripheralManager? = CBPeripheralManager(delegate: self, queue: DispatchQueue.global())
+    weak var delegate: BroadcasterDelegate?
 }
 
 //MARK: BeaconBroadcasterProtocol
@@ -43,9 +33,8 @@ extension Broadcaster: BroadcasterProtocol {
     func startBeacon(withUUID uuidString: String, localName: String) {
         guard let region = BeaconRegion(uuidString: uuidString, localName: localName) else { return }
         currentRegion = region
-        shouldBroadcast = true
         
-        if peripheralManager.state == .poweredOn {
+        if let peripheralManager = peripheralManager, peripheralManager.isOn {
             startAdvertising(region: region)
         } else {
             delegate?.transmissionFailed()
@@ -54,7 +43,6 @@ extension Broadcaster: BroadcasterProtocol {
     
     func stopBeacon() {
         currentRegion = nil
-        shouldBroadcast = false
         stopAdvertising()
     }
 }
@@ -62,7 +50,7 @@ extension Broadcaster: BroadcasterProtocol {
 //MARK: CBPeripheralManagerDelegate
 extension Broadcaster: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
-        if let region = currentRegion, peripheral.state == .poweredOn, shouldBroadcast {
+        if let region = currentRegion, peripheral.isOn {
             startAdvertising(region: region)
         } else {
             stopAdvertising()
@@ -72,14 +60,13 @@ extension Broadcaster: CBPeripheralManagerDelegate {
 
 //MARK: Private Methods
 private extension Broadcaster {
-    
     func startAdvertising(region: BeaconRegion) {
-        peripheralManager.startAdvertising(region.advertisementData)
+        peripheralManager?.startAdvertising(region.advertisementData)
         delegate?.transmissionStarted()
     }
     
     func stopAdvertising() {
-        peripheralManager.stopAdvertising()
+        peripheralManager?.stopAdvertising()
         delegate?.transmissionStopped()
     }
 }

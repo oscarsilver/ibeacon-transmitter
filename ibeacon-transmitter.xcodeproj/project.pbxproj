@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00637B1E1E7076CE002BA775 /* CBManagerState+isOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00637B1D1E7076CE002BA775 /* CBManagerState+isOn.swift */; };
+		00637B201E70774B002BA775 /* CBPeripheralManager+isOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00637B1F1E70774B002BA775 /* CBPeripheralManager+isOn.swift */; };
 		007ED4691E6EAA5100C4A1CC /* iBeaconTransmissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED4681E6EAA5100C4A1CC /* iBeaconTransmissionVC.swift */; };
 		007ED4721E6EABFF00C4A1CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 007ED4701E6EABFF00C4A1CC /* Localizable.strings */; };
 		007ED4761E6EACE400C4A1CC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007ED4751E6EACE400C4A1CC /* Strings.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00637B1D1E7076CE002BA775 /* CBManagerState+isOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBManagerState+isOn.swift"; sourceTree = "<group>"; };
+		00637B1F1E70774B002BA775 /* CBPeripheralManager+isOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBPeripheralManager+isOn.swift"; sourceTree = "<group>"; };
 		007ED4681E6EAA5100C4A1CC /* iBeaconTransmissionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconTransmissionVC.swift; sourceTree = "<group>"; };
 		007ED4711E6EABFF00C4A1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		007ED4751E6EACE400C4A1CC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -52,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00637B1C1E7076A9002BA775 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00637B1D1E7076CE002BA775 /* CBManagerState+isOn.swift */,
+				00637B1F1E70774B002BA775 /* CBPeripheralManager+isOn.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		007ED4671E6EAA2000C4A1CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 		0095CC7C1E6EA33A00A1D22F /* ibeacon-transmitter */ = {
 			isa = PBXGroup;
 			children = (
+				00637B1C1E7076A9002BA775 /* Extensions */,
 				007ED4831E6ED29200C4A1CC /* Models */,
 				007ED4801E6EB1B100C4A1CC /* Broadcasting */,
 				007ED4781E6EAD7300C4A1CC /* Views */,
@@ -260,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftgen strings ibeacon-transmitter/SupportFiles/Base.lproj/Localizable.strings -t swift3 --output ibeacon-transmitter/Enums/Generated/Strings.swift";
+			shellScript = "./Pods/SwiftGen/bin/swiftgen strings ibeacon-transmitter/SupportFiles/Base.lproj/Localizable.strings -t swift3 --output ibeacon-transmitter/Enums/Generated/Strings.swift";
 		};
 		3EA972F5AA0FC90847824EA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -316,12 +330,14 @@
 			files = (
 				007ED4851E6ED2AD00C4A1CC /* BeaconRegion.swift in Sources */,
 				007ED4691E6EAA5100C4A1CC /* iBeaconTransmissionVC.swift in Sources */,
+				00637B1E1E7076CE002BA775 /* CBManagerState+isOn.swift in Sources */,
 				007ED47D1E6EAE4F00C4A1CC /* Macros.swift in Sources */,
 				007ED4761E6EACE400C4A1CC /* Strings.swift in Sources */,
 				007ED4871E6EE42600C4A1CC /* Broadcaster.swift in Sources */,
 				007ED47B1E6EADA100C4A1CC /* Label.swift in Sources */,
 				0095CC7E1E6EA33A00A1D22F /* AppDelegate.swift in Sources */,
 				007ED47F1E6EAF9A00C4A1CC /* Margin.swift in Sources */,
+				00637B201E70774B002BA775 /* CBPeripheralManager+isOn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

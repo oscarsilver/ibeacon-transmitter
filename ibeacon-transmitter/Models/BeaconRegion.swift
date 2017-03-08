@@ -15,7 +15,6 @@ private let defaultMajorValue: UInt16 = 1
 private let defaultMeasuredPower: NSNumber = -59
 
 class BeaconRegion: CLBeaconRegion {
-    
     let uuid: UUID
     let localName: String
     let minorValue: CLBeaconMinorValue
