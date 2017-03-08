@@ -12,7 +12,7 @@ import CoreBluetooth
 
 private let defaultMinorValue: UInt16 = 1
 private let defaultMajorValue: UInt16 = 1
-private let defaultMeasuredPower: NSNumber = -100
+private let defaultMeasuredPower: NSNumber = -59
 
 class BeaconRegion: CLBeaconRegion {
     
