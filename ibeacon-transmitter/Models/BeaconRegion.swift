@@ -8,28 +8,34 @@
 
 import Foundation
 import CoreLocation
+import CoreBluetooth
 
 private let defaultMinorValue: UInt16 = 1
 private let defaultMajorValue: UInt16 = 1
-private let defaultMeasuredPower: NSNumber = 127
+private let defaultMeasuredPower: NSNumber = -100
 
 class BeaconRegion: CLBeaconRegion {
     
     let uuid: UUID
+    let localName: String
     let minorValue: CLBeaconMinorValue
     let majorValue: CLBeaconMajorValue
     
     var advertisementData: [String: Any] {
         let peripheralData = self.peripheralData(withMeasuredPower: defaultMeasuredPower)
-        return peripheralData.dictionaryWithValues(forKeys: peripheralData.allKeys as! [String])
+        var data = peripheralData.dictionaryWithValues(forKeys: peripheralData.allKeys as! [String])
+        data[CBAdvertisementDataLocalNameKey] = localName
+        print(data.debugDescription)
+        return data
     }
     
-    init?(uuidString: String, minorValue: CLBeaconMinorValue = defaultMinorValue, majorValue: CLBeaconMajorValue = defaultMajorValue, identifier: String? = Bundle.main.bundleIdentifier) {
+    init?(uuidString: String, localName: String, minorValue: CLBeaconMinorValue = defaultMinorValue, majorValue: CLBeaconMajorValue = defaultMajorValue, identifier: String? = Bundle.main.bundleIdentifier) {
         guard
             let identifier = identifier,
             let uuid = UUID(uuidString: uuidString)
         else { return nil }
         self.uuid = uuid
+        self.localName = localName
         self.minorValue = minorValue
         self.majorValue = majorValue
         super.init(proximityUUID: uuid, major: majorValue, minor: minorValue, identifier: identifier)

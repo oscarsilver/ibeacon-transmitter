@@ -178,12 +178,12 @@
 			buildConfigurationList = 0095CC8C1E6EA33A00A1D22F /* Build configuration list for PBXNativeTarget "ibeacon-transmitter" */;
 			buildPhases = (
 				3EA972F5AA0FC90847824EA2 /* [CP] Check Pods Manifest.lock */,
-				007ED4771E6EAD0100C4A1CC /* SwiftGen */,
 				0095CC761E6EA33A00A1D22F /* Sources */,
 				0095CC771E6EA33A00A1D22F /* Frameworks */,
 				0095CC781E6EA33A00A1D22F /* Resources */,
 				84567BE4F92175B705550C18 /* [CP] Embed Pods Frameworks */,
 				6522E79B4CE35849B75A6F19 /* [CP] Copy Pods Resources */,
+				007ED4771E6EAD0100C4A1CC /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -208,6 +208,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DL7K9B66J3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

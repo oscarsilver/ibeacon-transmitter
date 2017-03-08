@@ -11,7 +11,7 @@ import CoreBluetooth
 import CoreLocation
 
 protocol BroadcasterProtocol {
-    func startBeacon(withUUID uuidString: String)
+    func startBeacon(withUUID uuidString: String, localName: String)
     func stopBeacon()
     
     var delegate: BroadcasterDelegate? { get set }
@@ -40,8 +40,8 @@ class Broadcaster: NSObject {
 
 //MARK: BeaconBroadcasterProtocol
 extension Broadcaster: BroadcasterProtocol {
-    func startBeacon(withUUID uuidString: String) {
-        guard let region = BeaconRegion(uuidString: uuidString) else { return }
+    func startBeacon(withUUID uuidString: String, localName: String) {
+        guard let region = BeaconRegion(uuidString: uuidString, localName: localName) else { return }
         currentRegion = region
         shouldBroadcast = true
         

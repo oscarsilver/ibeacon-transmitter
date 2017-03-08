@@ -101,7 +101,7 @@ private extension iBeaconTransmissionVC {
     }
     
     func startTransmission() {
-        broadcaster.startBeacon(withUUID: "6C5DF2C4-7256-4563-BA20-A2507EFED9BB")
+        broadcaster.startBeacon(withUUID: "6C5DF2C4-7256-4563-BA20-A2507EFED9BB", localName: "Transmitter")
     }
     
     func stopTransmission() {
